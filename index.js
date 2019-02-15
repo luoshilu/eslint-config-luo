@@ -9,7 +9,7 @@ module.exports = {
     // ===== GENERAL =====
     'comma-dangle': ['error', 'always-multiline'],
     'no-console': 'error',
-    'sort-keys': 'error',
+    // 'sort-keys': 'error',
     // ===== ES6 =====
     'arrow-body-style': ['error', 'as-needed'],
     'arrow-parens': ['error', 'as-needed'],
