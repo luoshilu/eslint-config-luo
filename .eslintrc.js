@@ -1,1 +1,5 @@
-module.exports = require('./')
+module.exports = {
+  extends: [
+      'eslint-config-alloy',
+  ],
+};
