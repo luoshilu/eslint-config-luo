@@ -1,5 +1,3 @@
 module.exports = {
-  extends: [
-      'eslint-config-alloy',
-  ],
+    extends: ['./typescript.js', 'prettier', 'prettier/@typescript-eslint']
 };

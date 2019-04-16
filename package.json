@@ -1,26 +1,101 @@
 {
-  "name": "eslint-config-luo",
-  "version": "2.0.0",
-  "description": "eslint config",
+  "_from": "eslint-config-luo@2.0.1",
+  "_id": "eslint-config-luo@2.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-D8AyFOsqLdjPvI+YphlaRScRK1GB9zGyeXsRYaD5l/bLSVWpyqxCEAyPXx/aKjGeBdjc1q/fU57KjGCdOkKW6g==",
+  "_location": "/eslint-config-luo",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "eslint-config-luo@2.0.1",
+    "name": "eslint-config-luo",
+    "escapedName": "eslint-config-luo",
+    "rawSpec": "2.0.1",
+    "saveSpec": null,
+    "fetchSpec": "2.0.1"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/eslint-config-luo/-/eslint-config-luo-2.0.1.tgz",
+  "_shasum": "2dfffb7efb3dd4677b8529fdcb6edff5307323cb",
+  "_spec": "eslint-config-luo@2.0.1",
+  "_where": "C:\\Users\\qingyi\\Desktop\\getLuo",
+  "author": {
+    "name": "luo"
+  },
+  "bugs": {
+    "url": "https://github.com/luoshilu/eslint-config-luo/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "luo ESLint 规则",
+  "devDependencies": {
+    "@types/babylon": "^6.16.5",
+    "@types/doctrine": "0.0.3",
+    "@types/eslint": "^4.16.6",
+    "@types/node": "^11.11.4",
+    "@types/prettier": "^1.16.1",
+    "@types/react": "^16.8.8",
+    "@typescript-eslint/eslint-plugin": "^1.5.0",
+    "babel-eslint": "^10.0.1",
+    "babylon": "^6.18.0",
+    "doctrine": "^3.0.0",
+    "eclint": "^2.8.1",
+    "eslint": "^5.15.3",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-vue": "^5.2.2",
+    "husky": "^1.3.1",
+    "prettier": "^1.16.4",
+    "react": "^16.8.5",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.3.4000",
+    "vue-eslint-parser": "^5.0.0"
+  },
+  "homepage": "https://github.com/luoshilu/eslint-config-luo/",
+  "keywords": [
+    "eslint",
+    "eslintrc",
+    "eslintconfig",
+    "config",
+    "javascript",
+    "styleguide",
+    "react",
+    "vue",
+    "typescript"
+  ],
+  "license": "MIT",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "eslint-config-luo",
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^1.5.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.15.3",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-vue": "^5.2.2",
+    "vue-eslint-parser": "^6.0.3"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/luoshilu/eslint-config-luo.git"
   },
-  "author": "luoshilu",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/luoshilu/eslint-config-luo/issues"
+  "scripts": {
+    "build": "ts-node scripts/build.ts",
+    "eclint": "eclint check test",
+    "eclint:fix": "eclint fix test",
+    "eslint": "eslint --ext .js,.jsx,.ts,.tsx,.vue --ignore-pattern \"bad.*\" .",
+    "lint": "npm run eslint && npm run prettier && npm run eclint",
+    "prettier": "prettier -l \"./**/*\"",
+    "prettier:fix": "prettier --write -l \"./**/*\"",
+    "start": "npm test",
+    "test": "npm run lint && ts-node ./test/index.ts"
   },
-  "homepage": "https://github.com/luoshilu/eslint-config-luo#readme",
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^1.6.0",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.16.0",
-    "eslint-config-alloy": "^2.0.0-alpha.2",
-    "typescript": "^3.4.3"
-  }
+  "version": "2.0.1"
 }
